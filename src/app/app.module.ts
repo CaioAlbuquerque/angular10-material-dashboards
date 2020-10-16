@@ -4,10 +4,22 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './core/header/header.component';
+import { FooterComponent } from './core/footer/footer.component';
+import { SidebarComponent } from './core/sidebar/sidebar.component';
+import { BaseComponent } from './layouts/base/base.component';
+import { PrivateComponent } from './layouts/private/private.component';
+import { PublicComponent } from './layouts/public/public.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    SidebarComponent,
+    BaseComponent,
+    PrivateComponent,
+    PublicComponent
   ],
   imports: [
     BrowserModule,
