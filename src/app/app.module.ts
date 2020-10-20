@@ -11,6 +11,8 @@ import { BaseComponent } from './layouts/base/base.component';
 import { PrivateComponent } from './layouts/private/private.component';
 import { PublicComponent } from './layouts/public/public.component';
 import { MaterialModule } from './modules/material.module';
+import { DashboardsComponent } from './pages/dashboards/dashboards.component';
+import { NgxChartsModule }from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,15 @@ import { MaterialModule } from './modules/material.module';
     SidebarComponent,
     BaseComponent,
     PrivateComponent,
-    PublicComponent
+    PublicComponent,
+    DashboardsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

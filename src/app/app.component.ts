@@ -7,10 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular10-material-dashboards';
-  
-  sideBarOpened = false;
-
-  sideBarToggler(){
-    this.sideBarOpened = !this.sideBarOpened;
-  }
 }

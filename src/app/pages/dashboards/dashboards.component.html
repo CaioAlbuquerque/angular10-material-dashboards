@@ -1,0 +1,48 @@
+<div class="content">
+    <!--<ngx-charts-advanced-pie-chart
+        [view]=[500,300]
+        [results]="alvarasStatusData"
+        [gradient]="true">
+    </ngx-charts-advanced-pie-chart>-->
+
+    <ngx-charts-bar-vertical 
+        [view] = [1000,350]
+        [results]="alvarasStatusData"
+        [xAxisLabel]="'Alvaras'"
+        [legendTitle]="'Alvaras Por Mês'"
+        [yAxisLabel]="'Mês'"
+        [legend]="true"
+        [showXAxisLabel]="true"
+        [showYAxisLabel]="true"
+        [xAxis]="true"
+        [yAxis]="true"
+        [gradient]="true">
+    </ngx-charts-bar-vertical>
+
+    <ngx-charts-pie-grid 
+        [view]=[900,275]
+        [results]="alvarasStatusData" >
+    </ngx-charts-pie-grid>
+
+    <!--<ngx-charts-bar-vertical 
+        [view] = [1000,500]
+        [results]="alvarasStatusData"
+        [xAxisLabel]="'Alvaras'"
+        [legendTitle]="'Alvaras Por Status'"
+        [yAxisLabel]="'Status'"
+        [legend]="true"
+        [showXAxisLabel]="true"
+        [showYAxisLabel]="true"
+        [xAxis]="true"
+        [yAxis]="true"
+        [gradient]="true">
+    </ngx-charts-bar-vertical>-->
+
+    <!--<ngx-charts-pie-chart 
+        [results]="alvarasStatusData"
+        [legend]="true"
+        [legendTitle]="'Alvaras Por Status'" 
+        [view]="[800,500]"
+        [labels]="true" >
+    </ngx-charts-pie-chart>-->
+</div>
