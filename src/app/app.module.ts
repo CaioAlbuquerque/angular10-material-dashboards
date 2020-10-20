@@ -10,6 +10,7 @@ import { SidebarComponent } from './core/sidebar/sidebar.component';
 import { BaseComponent } from './layouts/base/base.component';
 import { PrivateComponent } from './layouts/private/private.component';
 import { PublicComponent } from './layouts/public/public.component';
+import { MaterialModule } from './modules/material.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PublicComponent } from './layouts/public/public.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

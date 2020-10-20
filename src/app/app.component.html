@@ -1,8 +1,16 @@
+<!-- Default components created from terminal with below commands:
+    $ ng g c core/header 
+    $ ng g c core/footer
+    $ ng g c core/sidebar
+-->
 <app-header></app-header>
 
-<app-sidebar></app-sidebar>
-
-<p>Content</p>
-<router-outlet></router-outlet>
+<mat-drawer-container>
+    
+    <!--<app-sidebar></app-sidebar>-->
+    
+    <router-outlet></router-outlet>
+    
+</mat-drawer-container>
 
 <app-footer></app-footer>
